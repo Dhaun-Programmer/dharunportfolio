@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharun V — CS Student</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">DV<span class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="mailto:dharun09112005@gmail.com">contact</a></li>
+    </ul>
+    <div class="nav-status"><span class="status-dot"></span>open to opportunities</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <canvas id="grid-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-profile">
+        <img src="img/profile.jpg" alt="Dharun V" class="hero-avatar" />
+      </div>
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="mono">CSE · 2nd Year · India</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="line" data-text="Dharun">Dharun</span>
+          <span class="line accent" data-text="V.">V.</span>
+        </h1>
+        <p class="hero-tagline">I build things for the web<br>and occasionally break them.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="Dharun_V_Resume.pdf" class="btn btn-ghost" download>Download Resume ↓</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="mono small">scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label mono">// about me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>A builder who loves<br><em>real problems.</em></h2>
+          <p>I'm Dharun V, a second-year Computer Science student with a deep curiosity for how things work — and an even deeper urge to build them from scratch. From CLI tools to full-stack apps, I'm always shipping something.</p>
+          <p>When I'm not coding, I'm reading about systems design, contributing to open source, or figuring out why my code worked yesterday but not today.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">1+</span><span class="stat-label">projects built</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">certifications</span></div>
+            <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">year in CSE</span></div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title mono">dharun@portfolio:~</span>
+            </div>
+            <div class="terminal-body mono" id="terminal-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label mono">// projects</div>
+      <h2 class="section-title">Things I've built</h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-number mono">01</div>
+          <div class="project-meta">
+            <span class="project-tag">Full Stack</span>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">Built a responsive personal portfolio using HTML, CSS, and Node.js/Express, featuring an animated hero section, project showcase, and a working contact form.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>Node.js</span><span>Express.js</span>
+          </div>
+          <a href="#" class="project-link mono">view project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label mono">// skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <div class="skills-marquee-wrap">
+        <div class="skills-marquee">
+          <div class="skills-track" id="skills-track">
+            <span>C</span><span>C++</span><span>Java</span>
+            <span>Python</span><span>SQL</span><span>Bootstrap</span>
+            <span>Node.js</span><span>Express.js</span><span>NumPy</span>
+            <span>Pandas</span><span>Matplotlib</span>
+            <!-- duplicate for infinite scroll -->
+            <span>C</span><span>C++</span><span>Java</span>
+            <span>Python</span><span>SQL</span><span>Bootstrap</span>
+            <span>Node.js</span><span>Express.js</span><span>NumPy</span>
+            <span>Pandas</span><span>Matplotlib</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-group">
+          <div class="skill-group-label mono">languages</div>
+          <div class="skill-pills">
+            <span class="pill">C</span>
+            <span class="pill">C++</span>
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label mono">frameworks & libs</div>
+          <div class="skill-pills">
+            <span class="pill">Bootstrap</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Express.js</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label mono">tools & databases</div>
+          <div class="skill-pills">
+            <span class="pill">VS Code</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label mono">// experience</div>
+      <h2 class="section-title">Where I've been</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-year mono">2024 — 2028</div>
+          <div class="tl-content">
+            <div class="tl-role">B.E. Computer Science & Engineering</div>
+            <div class="tl-place">New Prince Shri Bhavani College of Engineering and Technology</div>
+            <div class="tl-desc">CGPA: 8.44. Core coursework in Data Structures, Algorithms, OS, DBMS, Networks, and OOP.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year mono">Jun '25 — Jul '25</div>
+          <div class="tl-content">
+            <div class="tl-role">Web Developer Intern</div>
+            <div class="tl-place">Hitasoft Technology Solutions Pvt Ltd</div>
+            <div class="tl-desc">Developed a responsive tourist website front-end using HTML, CSS, Bootstrap, and JavaScript. Gained practical experience in UI design and exception handling.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year mono">Achievements</div>
+          <div class="tl-content">
+            <div class="tl-role">Participant</div>
+            <div class="tl-place">Various Technical Events</div>
+            <div class="tl-desc">Participated in Speak Quizy (Chennai Institute of Technology), Connexions and Treasure Hunt events at ALTiTuDES'25 National Level Math Fest (SRM Institute of Science and Technology).</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label mono">// contact</div>
+      <h2 class="section-title">Let's build something.</h2>
+      <p class="contact-sub">Have a project, opportunity, or just want to talk tech? I'm always open.</p>
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ef930dd3-c46e-484b-be4c-a008f69f1115">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="mono" for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label class="mono" for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="mono" for="message">message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-btn">Send message →</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:dharun09112005@gmail.com" class="contact-link mono">dharun09112005@gmail.com</a>
+        <a href="https://github.com/Dhaun-Programmer" target="_blank" class="contact-link mono">github</a>
+        <a href="https://www.linkedin.com/in/dharun-v-92249432a/" target="_blank" class="contact-link mono">linkedin</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="mono small">Dharun V · Built with HTML, CSS & Node.js · 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
